@@ -42,13 +42,12 @@ end
 
 def reduce_to_all_true(source_array)
   i = 0 
-  if source_array[i] != true && source_array[i] != false 
-    source_array.shift
-    i += 1
+  if source_array[i] = false 
+    return false 
   else
     i += 1 
   end
-  source_array
+  return true 
 end
     
   
